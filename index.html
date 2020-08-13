@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no">
+        <title>Tabela Zebra</title>
+        <style>
+            body{
+                margin: 0px;
+                padding: 0px;
+            }
+            table{
+                margin: auto;
+                margin-top: 125px;
+                text-align: center;
+                border: 1px solid black;
+            }
+            th, td{
+                border: 1px solid black;
+                padding: 5px 10px;
+            }
+            thead{
+                background-color: #cccccc;
+            }
+            tbody tr:nth-child(even){
+                background-color: #dddddd;
+            }
+            tr:hover{
+                background-color: #eeeeee;
+            }
+            footer{
+                text-align: center;
+                line-height: 50px;
+                background-color: #cccccc;
+                font-size: 15px;
+                color: #585050;
+                margin-top: 5px;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            footer a{
+                text-decoration: none;
+                color: #f8f6f6;
+            }
+
+            @media only screen and (max-width: 600px){
+                th,td{
+                    font-size: 12px;
+                    padding: 5px;
+                }
+                footer{
+                    font-size:12px;
+                    line-height: 30px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>Matéria</th>
+                    <th>Nota</th>
+                    <th>Média Necessária</th>
+                    <th>Aprovado?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Matemática</td>
+                    <td>7,8</td>
+                    <td>6,0</td>
+                    <td>Sim</td>
+                </tr>
+                <tr>
+                    <td>Português</td>
+                    <td>9,0</td>
+                    <td>6,0</td>
+                    <td>Sim</td>
+                </tr>
+                <tr>
+                    <td>História</td>
+                    <td>8,1</td>
+                    <td>6,0</td>
+                    <td>Sim</td>
+                </tr>
+                <tr>
+                    <td>Geografia</td>
+                    <td>6,5</td>
+                    <td>6,0</td>
+                    <td>Sim</td>
+                </tr>
+                <tr>
+                    <td>Química</td>
+                    <td>9,8</td>
+                    <td>6,0</td>
+                    <td>Sim</td>
+                </tr>
+                <tr>
+                    <td>Física</td>
+                    <td>9,4</td>
+                    <td>6,0</td>
+                    <td>Sim</td>
+                </tr>
+            </tbody>
+        </table>
+        <footer>
+            <div class="madeby">
+				Criado por <a href="https://github.com/ravenakaus">Júlia Paskauskas</a> como exercício para o curso <a href="https://b7web.com.br/php/" target="blank">PHP do Zero ao Profissional</a>
+			</div>
+        </footer>
+    </body>
+</html>
